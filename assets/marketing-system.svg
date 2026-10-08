@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc">
+  <title id="title">Lookatshow: единая система управления маркетингом для ИИ-агентов</title>
+  <desc id="desc">Архитектурная схема подхода: контекст компании, задача, инструменты, проверка результата и следующий шаг. Не скриншот программы.</desc>
+  <rect width="1280" height="560" fill="#101319"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="64" y="78" fill="#f7f8fb" font-size="26" font-weight="700" letter-spacing="3">LOOKATSHOW</text>
+    <text x="1216" y="78" fill="#9fa9bd" font-size="18" text-anchor="end" letter-spacing="2">MARKETING OS</text>
+    <path d="M64 108H1216" stroke="#3a4254"/>
+    <text x="64" y="200" fill="#ffffff" font-size="47" font-weight="700">Единая система управления</text>
+    <text x="64" y="261" fill="#ffffff" font-size="47" font-weight="700">маркетингом для ИИ-агентов</text>
+    <text x="64" y="309" fill="#aeb9cf" font-size="23">Общий подход. Самостоятельные открытые инструменты.</text>
+    <path d="M172 404H1108" fill="none" stroke="#4665ff" stroke-width="4"/>
+    <g fill="#181f2b" stroke="#46516b">
+      <rect x="64" y="369" width="216" height="72" rx="10"/>
+      <rect x="298" y="369" width="216" height="72" rx="10"/>
+      <rect x="532" y="369" width="216" height="72" rx="10"/>
+      <rect x="766" y="369" width="216" height="72" rx="10"/>
+      <rect x="1000" y="369" width="216" height="72" rx="10"/>
+    </g>
+    <g fill="#eef2ff" font-size="21" text-anchor="middle">
+      <text x="172" y="413">Контекст</text><text x="406" y="413">Задача</text>
+      <text x="640" y="413">Инструменты</text><text x="874" y="413">Проверка</text>
+      <text x="1108" y="413">Следующий шаг</text>
+    </g>
+    <text x="64" y="506" fill="#aeb9cf" font-size="17">Подготовил Дмитрий Лукашов</text>
+    <text x="1216" y="506" fill="#aeb9cf" font-size="17" text-anchor="end">Архитектурная схема, не интерфейс</text>
+  </g>
+</svg>

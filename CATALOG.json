@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "catalog": {
+    "name": "Lookatshow Open Tools",
+    "repository": "https://github.com/ilookatshow-gif/lookatshow-open-tools",
+    "positioning": "Unified marketing operating system for AI agents",
+    "author": "Дмитрий Лукашов / Dmitry Lukashov",
+    "channel": "https://t.me/lookatsoul",
+    "documentation_license": "MIT",
+    "contains_core_installer": false,
+    "updated_at": "2026-10-08"
+  },
+  "modules": [
+    {
+      "id": "direct-report-audit",
+      "version": "0.1.0",
+      "status": "public_release",
+      "name_ru": "Проверка выгрузки рекламных площадок Яндекс Директа",
+      "name_en": "Offline Yandex Direct placement-export audit",
+      "job": "Aggregate a normalised local CSV/TSV, calculate CPC/CPA and list manual-review candidates with reasons.",
+      "repository": "https://github.com/ilookatshow-gif/direct-report-audit",
+      "release": "https://github.com/ilookatshow-gif/direct-report-audit/releases/tag/v0.1.0",
+      "demo": "https://github.com/ilookatshow-gif/direct-report-audit/blob/v0.1.0/examples/synthetic-placements.csv",
+      "demo_is_synthetic": true,
+      "transport": "cli",
+      "output_format": "json",
+      "license": "MIT",
+      "runtime": "Python 3.9+, standard library only",
+      "auth_required": false,
+      "network_required_for_runtime": false,
+      "standalone_without_core": true,
+      "agent_instructions": ["Codex", "Claude Code"],
+      "agent_requirement": "Run a local Python command and read its JSON output; check the selected host with doctor and the demo.",
+      "account_writes": false,
+      "limitations": [
+        "Requires the module's exact five-column normalised input contract.",
+        "Candidates are for manual review, not automatic exclusions or savings evidence.",
+        "CLI instructions do not certify every agent host or operating system."
+      ],
+      "verified_demo": {
+        "date": "2026-10-08",
+        "os": "macOS arm64",
+        "python": "3.9.6",
+        "doctor_exit_code": 0,
+        "audit_exit_code": 0,
+        "unit_tests_passed": 25,
+        "source_matches_public_tag": "v0.1.0",
+        "rows": 5,
+        "placements": 4,
+        "manual_review_candidates": 2
+      },
+      "start_here": "START-HERE.md",
+      "learn": "https://lookatshow.ru/executive?utm_source=github&utm_medium=open_module&utm_campaign=catalog&utm_content=catalog_learn",
+      "implementation": "https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=catalog&utm_content=catalog_implementation"
+    }
+  ]
+}
