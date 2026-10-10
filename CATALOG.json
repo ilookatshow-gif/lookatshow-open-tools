@@ -8,7 +8,7 @@
     "channel": "https://t.me/lookatsoul",
     "documentation_license": "MIT",
     "contains_core_installer": false,
-    "updated_at": "2026-10-08"
+    "updated_at": "2026-10-10"
   },
   "modules": [
     {
@@ -52,6 +52,50 @@
       "start_here": "START-HERE.md",
       "learn": "https://lookatshow.ru/executive?utm_source=github&utm_medium=open_module&utm_campaign=catalog&utm_content=catalog_learn",
       "implementation": "https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=catalog&utm_content=catalog_implementation"
+    },
+    {
+      "id": "competitor-offer-radar",
+      "version": "0.1.0",
+      "status": "public_release",
+      "name_ru": "Сравнение цен, сроков и состава офферов конкурентов",
+      "name_en": "Compare competitor offers: prices, delivery and scope",
+      "job": "Compare two authorised local structured JSON snapshots by stable IDs, reporting observed changes and comparability limits.",
+      "repository": "https://github.com/ilookatshow-gif/competitor-offer-radar",
+      "release": "https://github.com/ilookatshow-gif/competitor-offer-radar/releases/tag/v0.1.0",
+      "download": "https://github.com/ilookatshow-gif/competitor-offer-radar/releases/download/v0.1.0/competitor-offer-radar-0.1.0.zip",
+      "demo": "https://github.com/ilookatshow-gif/competitor-offer-radar/tree/v0.1.0/examples",
+      "demo_is_synthetic": true,
+      "transport": "cli",
+      "output_format": "json",
+      "license": "MIT",
+      "runtime": "Python 3.9+, standard library only",
+      "auth_required": false,
+      "network_required_for_runtime": false,
+      "standalone_without_core": true,
+      "agent_instructions": ["Codex", "Claude Code"],
+      "agent_requirement": "Run a local Python command and read JSON; check the selected host with doctor and the synthetic demo.",
+      "account_writes": false,
+      "limitations": [
+        "Requires two prepared authorised structured snapshots; does not collect websites or provide MCP transport.",
+        "Declared amount changes are not equivalent-package price changes; changed or unknown scope requires review.",
+        "No commercial winner, profitability or demand conclusion; no certified compatibility with every agent or OS."
+      ],
+      "verified_demo": {
+        "date": "2026-10-10",
+        "os": "macOS arm64",
+        "python": "3.9.6",
+        "unit_tests_passed": 53,
+        "clean_install_tests_passed": 53,
+        "zip_tests_passed": 53,
+        "source_matches_public_tag": "v0.1.0",
+        "source_commit": "26f876b3f2d2d3bec12195dcfd35f1a2c68f3ddf",
+        "declared_sum_change_percent": "25",
+        "delivery_change_percent": "50",
+        "scope_changed_warning": true
+      },
+      "start_here": "https://github.com/ilookatshow-gif/competitor-offer-radar/blob/v0.1.0/README.ru.md",
+      "learn": "https://lookatshow.ru/executive?utm_source=github&utm_medium=open_module&utm_campaign=competitor-offer-radar&utm_content=training",
+      "implementation": "https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=competitor-offer-radar&utm_content=implementation"
     }
   ]
 }

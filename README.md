@@ -8,7 +8,9 @@ Open modules by **Дмитрий Лукашов (Dmitry Lukashov)**. Start with 
 
 [Run the example](START-HERE.md) · [Architecture](ARCHITECTURE.md) · [Machine-readable catalog](CATALOG.json) · [Русский](README.ru.md)
 
-## Available now: Yandex Direct placement audit
+## Available tools
+
+### Yandex Direct placement audit
 
 [`direct-report-audit`](https://github.com/ilookatshow-gif/direct-report-audit) reads a normalised local CSV/TSV export, adds up placement metrics and calculates CPC/CPA. It lists manual-review candidates with reasons. It doesn't exclude placements, change campaigns or claim savings.
 
@@ -17,6 +19,14 @@ Python 3.9+, standard library only. No advertising account, credentials, network
 [Release v0.1.0](https://github.com/ilookatshow-gif/direct-report-audit/releases/tag/v0.1.0) · [Synthetic input](https://github.com/ilookatshow-gif/direct-report-audit/blob/v0.1.0/examples/synthetic-placements.csv) · [Copyable commands and verified output](START-HERE.md)
 
 The example contains five invented rows and four placements. Two meet the stated review thresholds. They're test data, not a customer outcome.
+
+### Compare competitors' prices, delivery and scope
+
+[`competitor-offer-radar`](https://github.com/ilookatshow-gif/competitor-offer-radar) compares two authorised structured JSON offer snapshots by stable IDs. It reports declared amounts, delivery duration and component changes with the supplied source URLs and capture times. No websites are fetched; commercial judgement stays with you.
+
+[Release v0.1.0](https://github.com/ilookatshow-gif/competitor-offer-radar/releases/tag/v0.1.0) · [Copyable commands and agent prompt](https://github.com/ilookatshow-gif/competitor-offer-radar#readme) · [Synthetic input](https://github.com/ilookatshow-gif/competitor-offer-radar/tree/v0.1.0/examples)
+
+In the fictional example, the declared sum changes by +25%, delivery by +50%, and interview quantity from two to one. `scope_changed_warning=true` means the package changed: this is not a pure price increase for equivalent work. Python 3.9+, no dependencies or paid core; 53 tests passed on macOS/Python 3.9.6.
 
 ## One working method
 
@@ -34,8 +44,6 @@ Model independence is an architectural principle. Current open modules are Pytho
 
 ## Next work
 
-`competitor-offer-radar` is ready locally, not published. It compares two authorised structured offer snapshots; it doesn't scrape websites or rank commercial winners.
-
 CRM and email tools are on the roadmap. Download cards appear only after a checked public release.
 
 ## Use this in your company
@@ -46,9 +54,9 @@ Practical AI for business by Dmitry: [Telegram](https://t.me/lookatsoul). A subs
 
 ## FAQ
 
-**Must I buy the core?** No. The released module works independently under MIT. Training, implementation and third-party services have separate terms.
+**Must I buy the core?** No. The released modules work independently under MIT. Training, implementation and third-party services have separate terms.
 
-**Does installation connect live accounts?** No. The current tool reads your selected local file. Live integrations need their own access and explicit action scope.
+**Does installation connect live accounts?** No. The current tools read your selected local files. Live integrations need their own access and explicit action scope.
 
 **Can I use another agent?** A host that can run Python commands and read JSON can use the same CLI contract. Codex and Claude Code have supplied instructions; that isn't a claim that every host/version has been tested.
 
