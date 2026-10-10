@@ -28,6 +28,8 @@ The example contains five invented rows and four placements. Two meet the stated
 
 In the fictional example, the declared sum changes by +25%, delivery by +50%, and interview quantity from two to one. `scope_changed_warning=true` means the package changed: this is not a pure price increase for equivalent work. Python 3.9+, no dependencies or paid core; 53 tests passed on macOS/Python 3.9.6.
 
+The [step-by-step practice with a screenshot](https://lookatshow.ru/practice/sravnenie-offerov-konkurentov-ii/?utm_source=github&utm_medium=open_module&utm_campaign=competitor-offer-radar&utm_content=demo) (in Russian) includes the release ZIP, runnable commands, source JSON files and a copyable agent prompt. The screenshot shows a separate viewer for actual local output on fictional data, not a built-in module interface.
+
 ## One working method
 
 | Step | What the agent needs or produces |
