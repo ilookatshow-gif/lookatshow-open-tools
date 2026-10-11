@@ -8,6 +8,12 @@ Open modules by **Дмитрий Лукашов (Dmitry Lukashov)**. Start with 
 
 [Run the example](START-HERE.md) · [Architecture](ARCHITECTURE.md) · [Machine-readable catalog](CATALOG.json) · [Русский](README.ru.md)
 
+<!-- masterclass-20261014 -->
+## Free live workshop in Russian — 14 October 2026, 17:00 Moscow
+
+Dmitry Lukashov and Mikhail Puzyrev will cover AI for marketing and business workflows in a live Zoom session with questions. [Programme and optional practice](events/2026-10-14-ai-marketing.md) · [Register by commenting “+” on the Telegram announcement](https://t.me/lookatsoul/169). This invitation applies only to the 14 October session.
+<!-- /masterclass-20261014 -->
+
 ## Available tools
 
 ### Yandex Direct placement audit
