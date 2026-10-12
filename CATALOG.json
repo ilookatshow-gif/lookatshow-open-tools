@@ -111,6 +111,57 @@
       "practice": "https://lookatshow.ru/practice/sravnenie-offerov-konkurentov-ii/?utm_source=github&utm_medium=open_module&utm_campaign=competitor-offer-radar&utm_content=demo",
       "learn": "https://lookatshow.ru/executive?utm_source=github&utm_medium=open_module&utm_campaign=competitor-offer-radar&utm_content=training",
       "implementation": "https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=competitor-offer-radar&utm_content=implementation"
+    },
+    {
+      "id": "bitrix-read-kit",
+      "version": "0.1.0",
+      "status": "public_release",
+      "name_ru": "Проверка незавершённых дел по видимым сделкам Битрикс24",
+      "name_en": "Read-only Bitrix24 visible-deal activity audit",
+      "job": "Audit visible in-progress deals and unfinished CRM activities; distinguish complete-empty, scheduled, overdue, undated and incomplete reads.",
+      "repository": "https://github.com/ilookatshow-gif/bitrix-read-kit",
+      "release": "https://github.com/ilookatshow-gif/bitrix-read-kit/releases/tag/v0.1.0",
+      "download": "https://github.com/ilookatshow-gif/bitrix-read-kit/releases/download/v0.1.0/bitrix-read-kit-0.1.0.zip",
+      "download_kind": "release_asset",
+      "download_source_commit": "66685e10dbe71b15d6f9f86b8177b201be250992",
+      "download_sha256": "fc45f30715f5737548fbcc2c06db47b53a6494d99087050d6ea48cd41a6b3dde",
+      "demo": "https://github.com/ilookatshow-gif/bitrix-read-kit/blob/v0.1.0/examples/synthetic-snapshot.json",
+      "demo_is_synthetic": true,
+      "transport": "cli",
+      "output_format": "json",
+      "license": "MIT",
+      "runtime": "Python 3.9+, standard library only",
+      "auth_required_for_demo": false,
+      "auth_required_for_capture": true,
+      "network_required_for_demo": false,
+      "network_required_for_capture": true,
+      "standalone_without_core": true,
+      "account_writes": false,
+      "agent_instructions": ["Codex", "Claude Code"],
+      "agent_requirement": "Run the installed local CLI and read JSON. Real capture requires a privately configured supported Bitrix24 cloud webhook.",
+      "limitations": [
+        "CLI, not MCP. Only crm.item.list and crm.activity.list; no CRM writes or arbitrary API requests.",
+        "Records visible to the webhook user, not a complete company-wide CRM audit.",
+        "An unfinished activity is not proof of an agreed next step; incomplete reads cannot prove absence.",
+        "Internal CRM IDs remain private linkable data, not an anonymized snapshot.",
+        "Synthetic/mock and selected native CI do not prove access to a real portal or financial outcomes."
+      ],
+      "verified_demo": {
+        "date": "2026-10-12",
+        "source_matches_public_tag": "v0.1.0",
+        "source_commit": "66685e10dbe71b15d6f9f86b8177b201be250992",
+        "unit_tests": 95,
+        "clean_installed_tests": 95,
+        "ci_native_install_jobs_passed": 4,
+        "windows_skipped_posix_test": 1,
+        "ci_url": "https://github.com/ilookatshow-gif/bitrix-read-kit/actions/runs/38224428848",
+        "fictional_deals": 5,
+        "unique_visible_unfinished_activities": 3,
+        "live_portal_verified": false
+      },
+      "start_here": "https://github.com/ilookatshow-gif/bitrix-read-kit/blob/v0.1.0/README.ru.md",
+      "learn": "https://lookatshow.ru/executive?utm_source=github&utm_medium=open_module&utm_campaign=bitrix-read-kit&utm_content=catalog_training",
+      "implementation": "https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=bitrix-read-kit&utm_content=catalog_implementation"
     }
   ]
 }
