@@ -8,7 +8,7 @@
     "channel": "https://t.me/lookatsoul",
     "documentation_license": "MIT",
     "contains_core_installer": false,
-    "updated_at": "2026-10-10"
+    "updated_at": "2026-10-12"
   },
   "modules": [
     {
@@ -62,8 +62,12 @@
       "job": "Compare two authorised local structured JSON snapshots by stable IDs, reporting observed changes and comparability limits.",
       "repository": "https://github.com/ilookatshow-gif/competitor-offer-radar",
       "release": "https://github.com/ilookatshow-gif/competitor-offer-radar/releases/tag/v0.1.0",
-      "download": "https://github.com/ilookatshow-gif/competitor-offer-radar/releases/download/v0.1.0/competitor-offer-radar-0.1.0.zip",
-      "demo": "https://github.com/ilookatshow-gif/competitor-offer-radar/tree/v0.1.0/examples",
+      "download": "https://github.com/ilookatshow-gif/competitor-offer-radar/archive/7206178f1f6c7484c6f4463c62fe48d497b398d6.zip",
+      "download_kind": "source_archive",
+      "download_source_commit": "7206178f1f6c7484c6f4463c62fe48d497b398d6",
+      "download_sha256": "c336b9205337f967590378fdb782b654ce9443e3df909e3b1e1aadca11f1b025",
+      "release_download": "https://github.com/ilookatshow-gif/competitor-offer-radar/releases/download/v0.1.0/competitor-offer-radar-0.1.0.zip",
+      "demo": "https://github.com/ilookatshow-gif/competitor-offer-radar/tree/7206178f1f6c7484c6f4463c62fe48d497b398d6/examples",
       "demo_is_synthetic": true,
       "transport": "cli",
       "output_format": "json",
@@ -93,7 +97,18 @@
         "delivery_change_percent": "50",
         "scope_changed_warning": true
       },
-      "start_here": "https://lookatshow.ru/practice/sravnenie-offerov-konkurentov-ii/?utm_source=github&utm_medium=open_module&utm_campaign=competitor-offer-radar&utm_content=demo",
+      "current_source_verification": {
+        "date": "2026-10-11",
+        "source_commit": "7206178f1f6c7484c6f4463c62fe48d497b398d6",
+        "ci_run": "https://github.com/ilookatshow-gif/competitor-offer-radar/actions/runs/38153820165",
+        "conclusion": "success",
+        "native_install_jobs_passed": 4,
+        "source_unit_tests": 56,
+        "windows_skipped_posix_fifo_test": true,
+        "historical_release_contains_fix": false
+      },
+      "start_here": "START-HERE.md#radar-current-source",
+      "practice": "https://lookatshow.ru/practice/sravnenie-offerov-konkurentov-ii/?utm_source=github&utm_medium=open_module&utm_campaign=competitor-offer-radar&utm_content=demo",
       "learn": "https://lookatshow.ru/executive?utm_source=github&utm_medium=open_module&utm_campaign=competitor-offer-radar&utm_content=training",
       "implementation": "https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=competitor-offer-radar&utm_content=implementation"
     }

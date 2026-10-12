@@ -30,11 +30,13 @@ Python 3.9+, стандартная библиотека. Кабинет, API-к
 
 Сохраняете условия одного предложения в две разные даты, даёте агенту два разрешённых JSON-снимка. Инструмент показывает изменения заявленной суммы, срока и компонентов с исходными значениями, URL и датами. Он не собирает сайты и не решает за вас, чьё предложение лучше.
 
-[Код и инструкция](https://github.com/ilookatshow-gif/competitor-offer-radar) · [Скачать v0.1.0](https://github.com/ilookatshow-gif/competitor-offer-radar/releases/tag/v0.1.0) · [Учебные снимки](https://github.com/ilookatshow-gif/competitor-offer-radar/tree/v0.1.0/examples) · [Запрос для агента](https://github.com/ilookatshow-gif/competitor-offer-radar/blob/v0.1.0/README.ru.md#для-codex--claude-code)
+[Скачать проверенные исходники ZIP](https://github.com/ilookatshow-gif/competitor-offer-radar/archive/7206178f1f6c7484c6f4463c62fe48d497b398d6.zip) · [Установить через Codex или Claude Code](START-HERE.md#radar-current-source) · [Учебные снимки этой версии](https://github.com/ilookatshow-gif/competitor-offer-radar/tree/7206178f1f6c7484c6f4463c62fe48d497b398d6/examples)
 
-В выдуманном примере сумма выросла на 25%, срок увеличился на 50%, интервью стало одно вместо двух. Отчёт предупреждает: состав изменился, поэтому это не чистое подорожание равнозначного пакета. Python 3.9+, без зависимостей и покупки ядра; 53 теста прошли на macOS/Python 3.9.6.
+В выдуманном примере сумма выросла на 25%, срок увеличился на 50%, интервью стало одно вместо двух. Отчёт предупреждает: состав изменился, поэтому это не чистое подорожание равнозначного пакета. Python 3.9+, без зависимостей и покупки ядра. В исходниках от 11 октября исправлен вывод кириллицы; установка и учебный запуск проверены в четырёх CI-окружениях Ubuntu, Windows и macOS. [Точные версии и результаты проверки](https://github.com/ilookatshow-gif/competitor-offer-radar/actions/runs/38153820165).
 
-В [пошаговом практикуме со скриншотом](https://lookatshow.ru/practice/sravnenie-offerov-konkurentov-ii/?utm_source=github&utm_medium=open_module&utm_campaign=competitor-offer-radar&utm_content=demo) есть архив релиза, команды запуска, исходные JSON-файлы и готовый запрос для агента. На скриншоте — отдельная страница просмотра настоящего локального вывода на вымышленных данных, а не встроенный интерфейс модуля.
+ZIP выше закреплён за commit `7206178`; его можно дать агенту с запросом из START-HERE. Это исправленные исходники, не новый релиз. Исторический [v0.1.0](https://github.com/ilookatshow-gif/competitor-offer-radar/releases/tag/v0.1.0) не перезаписан и не содержит исправления кириллицы. Для новой установки используйте закреплённый ZIP.
+
+В [пошаговом практикуме со скриншотом](https://lookatshow.ru/practice/sravnenie-offerov-konkurentov-ii/?utm_source=github&utm_medium=open_module&utm_campaign=competitor-offer-radar&utm_content=demo) есть команды запуска, исходные JSON-файлы и готовый запрос для агента. Архив в практикуме относится к первоначальному релизу; актуальную установку начните с ZIP выше. На скриншоте — отдельная страница просмотра настоящего локального вывода на вымышленных данных, а не встроенный интерфейс модуля.
 
 ## Один порядок работы для разных агентов
 
