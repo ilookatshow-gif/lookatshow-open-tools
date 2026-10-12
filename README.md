@@ -30,11 +30,13 @@ The example contains five invented rows and four placements. Two meet the stated
 
 [`competitor-offer-radar`](https://github.com/ilookatshow-gif/competitor-offer-radar) compares two authorised structured JSON offer snapshots by stable IDs. It reports declared amounts, delivery duration and component changes with the supplied source URLs and capture times. No websites are fetched; commercial judgement stays with you.
 
-[Release v0.1.0](https://github.com/ilookatshow-gif/competitor-offer-radar/releases/tag/v0.1.0) · [Copyable commands and agent prompt](https://github.com/ilookatshow-gif/competitor-offer-radar#readme) · [Synthetic input](https://github.com/ilookatshow-gif/competitor-offer-radar/tree/v0.1.0/examples)
+[Download verified source ZIP](https://github.com/ilookatshow-gif/competitor-offer-radar/archive/7206178f1f6c7484c6f4463c62fe48d497b398d6.zip) · [Install with Codex or Claude Code](START-HERE.md#radar-current-source) · [Synthetic input for this revision](https://github.com/ilookatshow-gif/competitor-offer-radar/tree/7206178f1f6c7484c6f4463c62fe48d497b398d6/examples)
 
-In the fictional example, the declared sum changes by +25%, delivery by +50%, and interview quantity from two to one. `scope_changed_warning=true` means the package changed: this is not a pure price increase for equivalent work. Python 3.9+, no dependencies or paid core; 53 tests passed on macOS/Python 3.9.6.
+In the fictional example, the declared sum changes by +25%, delivery by +50%, and interview quantity from two to one. `scope_changed_warning=true` means the package changed: this is not a pure price increase for equivalent work. Python 3.9+, no dependencies or paid core. The 11 October source fix handles Cyrillic output; installation and the synthetic workflow passed four CI environments covering Ubuntu, Windows and macOS. [Exact versions and test results](https://github.com/ilookatshow-gif/competitor-offer-radar/actions/runs/38153820165).
 
-The [step-by-step practice with a screenshot](https://lookatshow.ru/practice/sravnenie-offerov-konkurentov-ii/?utm_source=github&utm_medium=open_module&utm_campaign=competitor-offer-radar&utm_content=demo) (in Russian) includes the release ZIP, runnable commands, source JSON files and a copyable agent prompt. The screenshot shows a separate viewer for actual local output on fictional data, not a built-in module interface.
+The ZIP is pinned to commit `7206178`; give it to your agent with the START-HERE prompt. This is repaired source, not a new release. Historical [v0.1.0](https://github.com/ilookatshow-gif/competitor-offer-radar/releases/tag/v0.1.0) is unchanged and does not contain the encoding fix. Use the pinned ZIP for a new installation.
+
+The [step-by-step practice with a screenshot](https://lookatshow.ru/practice/sravnenie-offerov-konkurentov-ii/?utm_source=github&utm_medium=open_module&utm_campaign=competitor-offer-radar&utm_content=demo) (in Russian) includes runnable commands, source JSON files and a copyable agent prompt. Its archive belongs to the initial release; start a current installation with the ZIP above. The screenshot shows a separate viewer for actual local output on fictional data, not a built-in module interface.
 
 ## One working method
 
