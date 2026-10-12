@@ -38,6 +38,16 @@ The ZIP is pinned to commit `7206178`; give it to your agent with the START-HERE
 
 The [step-by-step practice with a screenshot](https://lookatshow.ru/practice/sravnenie-offerov-konkurentov-ii/?utm_source=github&utm_medium=open_module&utm_campaign=competitor-offer-radar&utm_content=demo) (in Russian) includes runnable commands, source JSON files and a copyable agent prompt. Its archive belongs to the initial release; start a current installation with the ZIP above. The screenshot shows a separate viewer for actual local output on fictional data, not a built-in module interface.
 
+### Check unfinished activities on Bitrix24 deals
+
+[`bitrix-read-kit`](https://github.com/ilookatshow-gif/bitrix-read-kit) identifies visible in-progress deals with no unfinished CRM activity in a complete read. It separates scheduled, overdue, undated and incomplete activity reads. An absent activity does not prove a lost sale or absent customer agreement.
+
+[Download v0.1.0 ZIP](https://github.com/ilookatshow-gif/bitrix-read-kit/releases/download/v0.1.0/bitrix-read-kit-0.1.0.zip) · [Copyable agent prompt](https://github.com/ilookatshow-gif/bitrix-read-kit/blob/v0.1.0/README.md) · [Synthetic input](https://github.com/ilookatshow-gif/bitrix-read-kit/blob/v0.1.0/examples/synthetic-snapshot.json)
+
+Give the ZIP to your agent, ask it to install into a new local folder and run `doctor` and `demo`. Five fictional deals and three unfinished activities demonstrate the distinctions. Python 3.9+, no paid core or account needed for the demo. A real capture separately requires your private webhook and makes no CRM writes.
+
+Native installation and synthetic checks passed [four CI environments](https://github.com/ilookatshow-gif/bitrix-read-kit/actions/runs/38224428848): Ubuntu, Windows and macOS, with 95 tests per suite (Windows skips one POSIX-only test). This verifies selected environments, not every real portal or agent host.
+
 ## One working method
 
 | Step | What the agent needs or produces |
@@ -54,7 +64,7 @@ Model independence is an architectural principle. Current open modules are Pytho
 
 ## Next work
 
-CRM and email tools are on the roadmap. Download cards appear only after a checked public release.
+An email tool and further workflow integrations are on the roadmap. The first read-only Bitrix24 tool is available above; planned work is not a supplied integration.
 
 ## Use this in your company
 
