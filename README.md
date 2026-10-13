@@ -36,7 +36,7 @@ In the fictional example, the declared sum changes by +25%, delivery by +50%, an
 
 The ZIP is pinned to commit `7206178`; give it to your agent with the START-HERE prompt. This is repaired source, not a new release. Historical [v0.1.0](https://github.com/ilookatshow-gif/competitor-offer-radar/releases/tag/v0.1.0) is unchanged and does not contain the encoding fix. Use the pinned ZIP for a new installation.
 
-The [step-by-step practice with a screenshot](https://lookatshow.ru/practice/sravnenie-offerov-konkurentov-ii/?utm_source=github&utm_medium=open_module&utm_campaign=competitor-offer-radar&utm_content=demo) (in Russian) includes runnable commands, source JSON files and a copyable agent prompt. Its archive belongs to the initial release; start a current installation with the ZIP above. The screenshot shows a separate viewer for actual local output on fictional data, not a built-in module interface.
+The [step-by-step practice with a screenshot](https://lookatshow.ru/practice/sravnenie-offerov-konkurentov-ii/?utm_source=github&utm_medium=open_module&utm_campaign=competitor-offer-radar&utm_content=demo) (in Russian) includes runnable commands, source JSON files and a copyable agent prompt. The practice uses the pinned repaired source ZIP above. The screenshot shows a separate viewer for actual local output on fictional data, not a built-in module interface.
 
 ### Check unfinished activities on Bitrix24 deals
 
@@ -47,6 +47,8 @@ The [step-by-step practice with a screenshot](https://lookatshow.ru/practice/sra
 Give the ZIP to your agent, ask it to install into a new local folder and run `doctor` and `demo`. Five fictional deals and three unfinished activities demonstrate the distinctions. Python 3.9+, no paid core or account needed for the demo. A real capture separately requires your private webhook and makes no CRM writes.
 
 Native installation and synthetic checks passed [four CI environments](https://github.com/ilookatshow-gif/bitrix-read-kit/actions/runs/38224428848): Ubuntu, Windows and macOS, with 95 tests per suite (Windows skips one POSIX-only test). This verifies selected environments, not every real portal or agent host.
+
+The [step-by-step Bitrix24 practice](https://lookatshow.ru/practice/bitrix-prosrochennye-dela-ii/?utm_source=github&utm_medium=open_module&utm_campaign=bitrix-read-kit&utm_content=demo) (in Russian) includes a copyable agent prompt, downloadable JSON files, exact commands and a screenshot of actual output on five fictional deals. It also changes one completeness flag to demonstrate why an incomplete empty read cannot prove that an activity is missing. The screenshot is a separate viewer of saved local output, not the Bitrix24 interface.
 
 ## One working method
 
@@ -80,7 +82,7 @@ Practical AI for business by Dmitry: [Telegram](https://t.me/lookatsoul). A subs
 
 **Can I use another agent?** A host that can run Python commands and read JSON can use the same CLI contract. Codex and Claude Code have supplied instructions; that isn't a claim that every host/version has been tested.
 
-**Are my data local?** The CLI doesn't send data over the network. A cloud agent may see what you give it, including command output. Use synthetic input first and follow your company's data rules.
+**Are my data local?** Offline analysis processes your selected local files without uploading a report. Optional Bitrix24 capture sends authorised read requests to your privately configured portal. A cloud agent may see what you give it, including command output. Use synthetic input first and follow your company's data rules.
 
 ## License and useful issues
 
