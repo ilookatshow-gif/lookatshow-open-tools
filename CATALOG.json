@@ -8,7 +8,7 @@
     "channel": "https://t.me/lookatsoul",
     "documentation_license": "MIT",
     "contains_core_installer": false,
-    "updated_at": "2026-10-13"
+    "updated_at": "2026-10-15"
   },
   "modules": [
     {
@@ -163,6 +163,71 @@
       "practice": "https://lookatshow.ru/practice/bitrix-prosrochennye-dela-ii/?utm_source=github&utm_medium=open_module&utm_campaign=bitrix-read-kit&utm_content=demo",
       "learn": "https://lookatshow.ru/executive?utm_source=github&utm_medium=open_module&utm_campaign=bitrix-read-kit&utm_content=catalog_training",
       "implementation": "https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=bitrix-read-kit&utm_content=catalog_implementation"
+    },
+    {
+      "id": "unisender-campaign-kit",
+      "version": "0.1.0",
+      "status": "public_release",
+      "name_ru": "Офлайн-проверка email-черновика, разрешений и исключений для UniSender Classic",
+      "name_en": "Offline UniSender Classic campaign, permission and suppression preflight",
+      "job": "Check a locally supplied email draft, permission ledger and suppression CSV; explain duplicates, contradictions, expiry, supplied unsubscribes and exclusions without API access or sending.",
+      "repository": "https://github.com/ilookatshow-gif/unisender-campaign-kit",
+      "release": "https://github.com/ilookatshow-gif/unisender-campaign-kit/releases/tag/v0.1.0",
+      "release_tag": "v0.1.0",
+      "download": "https://github.com/ilookatshow-gif/unisender-campaign-kit/releases/download/v0.1.0/unisender-campaign-kit-0.1.0.zip",
+      "download_kind": "release_asset",
+      "download_source_commit": "675294b9d9c3ee70a7e9db79102e73b124b44745",
+      "download_sha256": "07cab1c7194d6c01227a84e08d8c3cc8ddf092cf36099a1daa80fa9cdaa16f99",
+      "download_bytes": 37466,
+      "demo": "https://github.com/ilookatshow-gif/unisender-campaign-kit/tree/675294b9d9c3ee70a7e9db79102e73b124b44745/examples",
+      "demo_is_synthetic": true,
+      "transport": "cli",
+      "output_format": "json",
+      "license": "MIT",
+      "runtime": "Python 3.9+, standard library only",
+      "auth_required": false,
+      "network_required_for_runtime": false,
+      "standalone_without_core": true,
+      "account_writes": false,
+      "sending_supported": false,
+      "agent_instructions": ["Codex", "Claude Code"],
+      "agent_requirement": "Run the local Python CLI and read JSON. Use a new isolated installation prefix and verify doctor and the synthetic demo in the selected environment.",
+      "limitations": [
+        "Offline only; no UniSender authentication, API, contact import, subscription, scheduling, sending or MCP transport.",
+        "Permission flags and evidence are supplied assertions, not verified consent, legal clearance, current provider state or delivery.",
+        "Suppression is only the explicitly supplied local list; provider/global/list states are not refreshed.",
+        "Reports omit addresses, evidence text and HTML, but source-row ordinals remain private linkable data.",
+        "Synthetic results do not establish demand, reach, savings, sales or compatibility with every operating system and agent host.",
+        "Native Windows/Linux execution has not been verified. Source and freshly extracted ZIP passed the same 83-test suite; the installed payload was smoke-tested, not tested with an installed 83-test suite."
+      ],
+      "synthetic_expected_result": {
+        "evaluation_time": "2026-10-14T17:00:00+03:00",
+        "contact_rows": 6,
+        "unique_valid_addresses": 5,
+        "eligible_under_supplied_rules": 1,
+        "excluded_rows": 5,
+        "consent_evidence_verified": false,
+        "legal_permission_verified": false,
+        "provider_acceptance_verified": false,
+        "deliverability_verified": false,
+        "sending_performed": false
+      },
+      "verified_demo": {
+        "date": "2026-10-15",
+        "source_commit": "675294b9d9c3ee70a7e9db79102e73b124b44745",
+        "source_unit_tests_passed": 83,
+        "extracted_zip_unit_tests_passed": 83,
+        "additional_independent_assertions_passed": 70,
+        "clean_install_smoke": true,
+        "os": "macOS arm64",
+        "python": "3.9.6",
+        "native_windows_verified": false,
+        "native_linux_verified": false,
+        "live_provider_verified": false
+      },
+      "start_here": "https://github.com/ilookatshow-gif/unisender-campaign-kit/blob/675294b9d9c3ee70a7e9db79102e73b124b44745/README.ru.md",
+      "learn": "https://lookatshow.ru/corporate?utm_source=github&utm_medium=open_module&utm_campaign=unisender-campaign-kit&utm_content=catalog_training",
+      "implementation": "https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=unisender-campaign-kit&utm_content=catalog_implementation"
     }
   ]
 }

@@ -44,6 +44,41 @@ Native installation and synthetic checks passed [four CI environments](https://g
 
 The [step-by-step Bitrix24 practice](https://lookatshow.ru/practice/bitrix-prosrochennye-dela-ii/?utm_source=github&utm_medium=open_module&utm_campaign=bitrix-read-kit&utm_content=demo) (in Russian) includes a copyable agent prompt, downloadable JSON files, exact commands and a screenshot of actual output on five fictional deals. It also changes one completeness flag to demonstrate why an incomplete empty read cannot prove that an activity is missing. The screenshot is a separate viewer of saved local output, not the Bitrix24 interface.
 
+### Check an email draft, permissions and exclusions before UniSender
+
+[`unisender-campaign-kit`](https://github.com/ilookatshow-gif/unisender-campaign-kit).
+
+[Release v0.1.0](https://github.com/ilookatshow-gif/unisender-campaign-kit/releases/tag/v0.1.0) ·
+[Download ZIP](https://github.com/ilookatshow-gif/unisender-campaign-kit/releases/download/v0.1.0/unisender-campaign-kit-0.1.0.zip) ·
+[Agent prompt and exact schema](https://github.com/ilookatshow-gif/unisender-campaign-kit/blob/675294b9d9c3ee70a7e9db79102e73b124b44745/README.md) ·
+[Synthetic fixtures](https://github.com/ilookatshow-gif/unisender-campaign-kit/tree/675294b9d9c3ee70a7e9db79102e73b124b44745/examples)
+
+The offline CLI checks a locally supplied UniSender **Classic** email draft,
+permission ledger and suppression CSV. It explains duplicates, withdrawn or
+expired permission, supplied exclusions and contradictory records. It does not
+connect to UniSender, import contacts, schedule or send messages; it is not MCP.
+
+The included synthetic demo has six rows: one meets the declared local rules and
+five are excluded. All addresses and evidence labels are invented. A passed row
+is **not** verified consent, legal clearance, provider approval or delivery.
+Python 3.9+, standard library only; no account, API key or paid core is needed.
+
+Give the package to an agent and ask it to install into a new local prefix,
+run `doctor` and `demo`, and explain each
+exclusion without changing the evidence. Normal reports contain no promotional
+inserts, email addresses or HTML body; row ordinals remain private linkable data.
+The optional author greeting appears once at explicit onboarding.
+
+Source commit `675294b9d9c3ee70a7e9db79102e73b124b44745`; the 37,466-byte release
+ZIP has SHA-256
+`07cab1c7194d6c01227a84e08d8c3cc8ddf092cf36099a1daa80fa9cdaa16f99`.
+The exact frozen source and freshly unpacked ZIP each passed the same 83-test
+suite, with 70 additional independent assertions. Clean installation and the
+synthetic workflow were checked on macOS arm64/Python 3.9.6.
+Legacy-output simulation is not a native
+Windows test; native Windows and Linux execution remain unverified. No live
+email account, provider approval, delivery or sales result is established.
+
 ## One working method
 
 | Step | What the agent needs or produces |
@@ -60,7 +95,9 @@ Model independence is an architectural principle. Current open modules are Pytho
 
 ## Next work
 
-An email tool and further workflow integrations are on the roadmap. The first read-only Bitrix24 tool is available above; planned work is not a supplied integration.
+A live email connector and further workflow integrations are on the roadmap.
+The offline email module above does not supply one. The first read-only
+Bitrix24 tool is available above; planned work is not a supplied integration.
 
 ## Use this in your company
 
