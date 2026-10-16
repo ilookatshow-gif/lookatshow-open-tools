@@ -8,6 +8,8 @@ Open modules by **Дмитрий Лукашов (Dmitry Lukashov)**. Start with 
 
 [Run the example](START-HERE.md) · [Architecture](ARCHITECTURE.md) · [Machine-readable catalog](CATALOG.json) · [Русский](README.ru.md)
 
+[Four reproducible offline evidence checks before API access](https://dev.to/lookatshow/four-offline-checks-before-giving-a-marketing-agent-api-access-2950): commands, synthetic fixtures and expected results for the four standalone tools below. Each tool runs separately before you give an agent access to a live account.
+
 ## Available tools
 
 ### Yandex Direct placement audit
