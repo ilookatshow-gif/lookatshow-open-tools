@@ -81,6 +81,24 @@ Legacy-output simulation is not a native
 Windows test; native Windows and Linux execution remain unverified. No live
 email account, provider approval, delivery or sales result is established.
 
+### Find evidence in company documents: company-knowledge-kit
+
+[`company-knowledge-kit`](https://github.com/ilookatshow-gif/company-knowledge-kit)
+searches an explicit Markdown/text corpus and returns exact source text, line
+ranges and SHA-256. Every query word must appear within one 12-line chunk.
+No match returns `not_found`; changed or missing source bytes stop retrieval
+until the index is deliberately rebuilt.
+
+[Release v0.1.1](https://github.com/ilookatshow-gif/company-knowledge-kit/releases/tag/v0.1.1) ·
+[Instructions and agent prompt](https://github.com/ilookatshow-gif/company-knowledge-kit/blob/main/README.md) ·
+[Invented corpus](https://github.com/ilookatshow-gif/company-knowledge-kit/tree/main/examples).
+
+The invented demo returns one active refund-policy chunk, version 2, lines 1–6;
+an archived document is excluded by supplied manifest metadata. This is lexical
+retrieval, not automatic policy authority selection. Python 3.9+, standard
+library only, no model, API key or paid core. The index contains the selected
+source text and is stored locally.
+
 ## One working method
 
 | Step | What the agent needs or produces |
