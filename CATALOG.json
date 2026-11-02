@@ -243,16 +243,16 @@
     },
     {
       "id": "company-knowledge-kit",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "status": "public_release",
       "name_ru": "Локальный поиск по документам с точными цитатами",
       "name_en": "Offline document search with exact source citations",
       "job": "Search an explicit local Markdown/text corpus; return matching active source lines and hashes; refuse a changed manifest or source snapshot.",
       "repository": "https://github.com/ilookatshow-gif/company-knowledge-kit",
-      "release": "https://github.com/ilookatshow-gif/company-knowledge-kit/releases/tag/v0.1.0",
-      "download": "https://github.com/ilookatshow-gif/company-knowledge-kit/releases/download/v0.1.0/company-knowledge-kit-0.1.0.zip",
-      "download_sha256": "2711784aa1582cdb62cbd0d33e38dd046658901a266becbcef4ec0ec2fd8e1f7",
-      "demo": "https://github.com/ilookatshow-gif/company-knowledge-kit/tree/v0.1.0/examples",
+      "release": "https://github.com/ilookatshow-gif/company-knowledge-kit/releases/tag/v0.1.1",
+      "download": "https://github.com/ilookatshow-gif/company-knowledge-kit/releases/download/v0.1.1/company-knowledge-kit-0.1.1.zip",
+      "download_sha256": "f7fcb3709ac538ea10515f379cc1f80a44923b4dfa9f6a3abc45056ad9618a28",
+      "demo": "https://github.com/ilookatshow-gif/company-knowledge-kit/tree/v0.1.1/examples",
       "demo_is_synthetic": true,
       "transport": "cli",
       "output_format": "json",
@@ -277,7 +277,7 @@
         "date": "2026-11-02",
         "os": "macOS arm64",
         "python": "3.9.6",
-        "source_matches_public_tag": "v0.1.0",
+        "source_matches_public_tag": "v0.1.1",
         "documents": 3,
         "active_search_results": 1,
         "source_id": "refund-current",
@@ -286,7 +286,14 @@
       },
       "start_here": "START-HERE.md",
       "learn": "https://lookatshow.ru/executive?utm_source=github&utm_medium=open_module&utm_campaign=company-knowledge-kit&utm_content=catalog_learn",
-      "implementation": "https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=company-knowledge-kit&utm_content=catalog_implementation"
+      "implementation": "https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=company-knowledge-kit&utm_content=catalog_implementation",
+      "verification": {
+        "local_macOS_source_and_zip_tests": 42,
+        "independent_checks_per_artifact": 26,
+        "native_ci_pr_url": "https://github.com/ilookatshow-gif/company-knowledge-kit/actions/runs/41477876675",
+        "native_ci_jobs_passed": 4,
+        "windows_scope": "Python CLI/tests/doctor/demo; installer remains POSIX"
+      }
     }
   ]
 }

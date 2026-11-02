@@ -89,7 +89,7 @@ ranges and SHA-256. Every query word must appear within one 12-line chunk.
 No match returns `not_found`; changed or missing source bytes stop retrieval
 until the index is deliberately rebuilt.
 
-[Release v0.1.0](https://github.com/ilookatshow-gif/company-knowledge-kit/releases/tag/v0.1.0) ·
+[Release v0.1.1](https://github.com/ilookatshow-gif/company-knowledge-kit/releases/tag/v0.1.1) ·
 [Instructions and agent prompt](https://github.com/ilookatshow-gif/company-knowledge-kit/blob/main/README.md) ·
 [Invented corpus](https://github.com/ilookatshow-gif/company-knowledge-kit/tree/main/examples).
 

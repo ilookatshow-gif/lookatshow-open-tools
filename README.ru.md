@@ -90,7 +90,7 @@ Commit исходников — `675294b9d9c3ee70a7e9db79102e73b124b44745`; ар
 12-строчном блоке, команда вернёт `not_found`. Изменённый или отсутствующий
 источник останавливает выдачу до явной пересборки индекса.
 
-[Релиз v0.1.0](https://github.com/ilookatshow-gif/company-knowledge-kit/releases/tag/v0.1.0) ·
+[Релиз v0.1.1](https://github.com/ilookatshow-gif/company-knowledge-kit/releases/tag/v0.1.1) ·
 [Инструкция и запрос агенту](https://github.com/ilookatshow-gif/company-knowledge-kit/blob/main/README.ru.md) ·
 [Вымышленные документы](https://github.com/ilookatshow-gif/company-knowledge-kit/tree/main/examples).
 

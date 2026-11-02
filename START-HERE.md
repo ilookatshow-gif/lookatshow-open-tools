@@ -111,7 +111,7 @@ Use the commands above, substituting `python` on Windows when appropriate. This 
 
 ## Company Knowledge Kit: поиск источника / find source evidence
 
-[Релиз и ZIP / release and ZIP](https://github.com/ilookatshow-gif/company-knowledge-kit/releases/tag/v0.1.0) · [Русская инструкция](https://github.com/ilookatshow-gif/company-knowledge-kit/blob/main/README.ru.md)
+[Релиз и ZIP / release and ZIP](https://github.com/ilookatshow-gif/company-knowledge-kit/releases/tag/v0.1.1) · [Русская инструкция](https://github.com/ilookatshow-gif/company-knowledge-kit/blob/main/README.ru.md)
 
 After downloading and unpacking the company-knowledge-kit release into a new
 folder, run:
