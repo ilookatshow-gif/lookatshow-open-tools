@@ -8,7 +8,7 @@
     "channel": "https://t.me/lookatsoul",
     "documentation_license": "MIT",
     "contains_core_installer": false,
-    "updated_at": "2026-10-15"
+    "updated_at": "2026-11-02"
   },
   "modules": [
     {
@@ -29,7 +29,10 @@
       "auth_required": false,
       "network_required_for_runtime": false,
       "standalone_without_core": true,
-      "agent_instructions": ["Codex", "Claude Code"],
+      "agent_instructions": [
+        "Codex",
+        "Claude Code"
+      ],
       "agent_requirement": "Run a local Python command and read its JSON output; check the selected host with doctor and the demo.",
       "account_writes": false,
       "limitations": [
@@ -76,7 +79,10 @@
       "auth_required": false,
       "network_required_for_runtime": false,
       "standalone_without_core": true,
-      "agent_instructions": ["Codex", "Claude Code"],
+      "agent_instructions": [
+        "Codex",
+        "Claude Code"
+      ],
       "agent_requirement": "Run a local Python command and read JSON; check the selected host with doctor and the synthetic demo.",
       "account_writes": false,
       "limitations": [
@@ -137,7 +143,10 @@
       "network_required_for_capture": true,
       "standalone_without_core": true,
       "account_writes": false,
-      "agent_instructions": ["Codex", "Claude Code"],
+      "agent_instructions": [
+        "Codex",
+        "Claude Code"
+      ],
       "agent_requirement": "Run the installed local CLI and read JSON. Real capture requires a privately configured supported Bitrix24 cloud webhook.",
       "limitations": [
         "CLI, not MCP. Only crm.item.list and crm.activity.list; no CRM writes or arbitrary API requests.",
@@ -190,7 +199,10 @@
       "standalone_without_core": true,
       "account_writes": false,
       "sending_supported": false,
-      "agent_instructions": ["Codex", "Claude Code"],
+      "agent_instructions": [
+        "Codex",
+        "Claude Code"
+      ],
       "agent_requirement": "Run the local Python CLI and read JSON. Use a new isolated installation prefix and verify doctor and the synthetic demo in the selected environment.",
       "limitations": [
         "Offline only; no UniSender authentication, API, contact import, subscription, scheduling, sending or MCP transport.",
@@ -228,6 +240,53 @@
       "start_here": "https://github.com/ilookatshow-gif/unisender-campaign-kit/blob/675294b9d9c3ee70a7e9db79102e73b124b44745/README.ru.md",
       "learn": "https://lookatshow.ru/corporate?utm_source=github&utm_medium=open_module&utm_campaign=unisender-campaign-kit&utm_content=catalog_training",
       "implementation": "https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=unisender-campaign-kit&utm_content=catalog_implementation"
+    },
+    {
+      "id": "company-knowledge-kit",
+      "version": "0.1.0",
+      "status": "public_release",
+      "name_ru": "Локальный поиск по документам с точными цитатами",
+      "name_en": "Offline document search with exact source citations",
+      "job": "Search an explicit local Markdown/text corpus; return matching active source lines and hashes; refuse a changed manifest or source snapshot.",
+      "repository": "https://github.com/ilookatshow-gif/company-knowledge-kit",
+      "release": "https://github.com/ilookatshow-gif/company-knowledge-kit/releases/tag/v0.1.0",
+      "download": "https://github.com/ilookatshow-gif/company-knowledge-kit/releases/download/v0.1.0/company-knowledge-kit-0.1.0.zip",
+      "download_sha256": "2711784aa1582cdb62cbd0d33e38dd046658901a266becbcef4ec0ec2fd8e1f7",
+      "demo": "https://github.com/ilookatshow-gif/company-knowledge-kit/tree/v0.1.0/examples",
+      "demo_is_synthetic": true,
+      "transport": "cli",
+      "output_format": "json",
+      "license": "MIT",
+      "runtime": "Python 3.9+, standard library only; native installer POSIX only",
+      "auth_required": false,
+      "network_required_for_runtime": false,
+      "standalone_without_core": true,
+      "agent_instructions": [
+        "Codex",
+        "Claude Code"
+      ],
+      "agent_requirement": "Run a local Python command and read JSON. Verify doctor and the invented demo in the selected host.",
+      "account_writes": false,
+      "limitations": [
+        "Exact normalized-word lexical search across non-overlapping 12-line chunks; no embeddings, synonyms or generated answers.",
+        "Active status is supplied metadata, not a determination of the authoritative/current policy.",
+        "Index contains selected source text. Hash freshness is not authentication; external AI privacy is separate.",
+        "Windows can run the Python CLI directly; the bundled native installer supports POSIX."
+      ],
+      "verified_demo": {
+        "date": "2026-11-02",
+        "os": "macOS arm64",
+        "python": "3.9.6",
+        "source_matches_public_tag": "v0.1.0",
+        "documents": 3,
+        "active_search_results": 1,
+        "source_id": "refund-current",
+        "source_start_line": 1,
+        "source_end_line": 6
+      },
+      "start_here": "START-HERE.md",
+      "learn": "https://lookatshow.ru/executive?utm_source=github&utm_medium=open_module&utm_campaign=company-knowledge-kit&utm_content=catalog_learn",
+      "implementation": "https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=company-knowledge-kit&utm_content=catalog_implementation"
     }
   ]
 }

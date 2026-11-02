@@ -107,3 +107,22 @@ Download the pinned ZIP above, unpack it and open the module directory in your a
 Use the commands above, substituting `python` on Windows when appropriate. This is the source revision with the encoding fix, not a replacement for historical v0.1.0. Synthetic results are not commercial outcomes.
 
 Подготовил **Дмитрий Лукашов / Dmitry Lukashov**. [Практические разборы](https://t.me/lookatsoul) · [Научиться на своей задаче](https://lookatshow.ru/executive?utm_source=github&utm_medium=open_module&utm_campaign=catalog&utm_content=start_here_learn) · [Поручить внедрение](https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=catalog&utm_content=start_here_implementation)
+
+
+## Company Knowledge Kit: поиск источника / find source evidence
+
+[Релиз и ZIP / release and ZIP](https://github.com/ilookatshow-gif/company-knowledge-kit/releases/tag/v0.1.0) · [Русская инструкция](https://github.com/ilookatshow-gif/company-knowledge-kit/blob/main/README.ru.md)
+
+After downloading and unpacking the company-knowledge-kit release into a new
+folder, run:
+
+```bash
+python3 -B knowledge_kit.py --json doctor
+python3 -B knowledge_kit.py --json demo
+```
+
+Expected demo: `ok: true`, `synthetic: true`, `status: "found"`, one result
+`refund-current`, version `2`, `documents/refund-current.md`, lines 1–6.
+Read the exact returned text. These documents and business terms are invented.
+Use the module README to build an explicit manifest and index for your own
+permitted files, check no-match behavior and verify refusal after a source edit.
