@@ -126,3 +126,24 @@ Expected demo: `ok: true`, `synthetic: true`, `status: "found"`, one result
 Read the exact returned text. These documents and business terms are invented.
 Use the module README to build an explicit manifest and index for your own
 permitted files, check no-match behavior and verify refusal after a source edit.
+
+
+## Presentation Kit: редактируемый PPTX / editable presentation
+
+[Релиз / release](https://github.com/ilookatshow-gif/presentation-kit/releases/tag/v0.1.0) · [Готовый учебный PPTX](https://github.com/ilookatshow-gif/presentation-kit/blob/v0.1.0/examples/synthetic-demo.pptx)
+
+Download and unpack the presentation-kit release into a new folder, then run:
+
+```bash
+python3 -B presentation_kit.py --json doctor
+python3 -B presentation_kit.py --json demo --output ./synthetic-demo.pptx
+python3 -B presentation_kit.py --json inspect ./synthetic-demo.pptx
+```
+
+Expected: five slides covering all four supported layouts; native editable text and
+table cells. Compare `outline` with `examples/synthetic-deck.json`, then open
+the resulting deck in your presentation editor. All demo content is invented.
+The structural check is not a visual review or a universal compatibility test.
+
+
+The bundled five-slide PPTX was rendered with LibreOffice and inspected at full size. The PNG preview shows that actual render. This does not establish a Microsoft PowerPoint test or universal rendering compatibility.

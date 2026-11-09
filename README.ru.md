@@ -99,6 +99,24 @@ Commit исходников — `675294b9d9c3ee70a7e9db79102e73b124b44745`; ар
 а не определение действующего регламента. Python 3.9+, стандартная библиотека,
 без покупки ядра. Индекс содержит текст выбранных файлов и остаётся локально.
 
+### Собрать редактируемую презентацию: presentation-kit
+
+[`presentation-kit`](https://github.com/ilookatshow-gif/presentation-kit)
+собирает PPTX из явно заданных текстов и таблиц. Четыре фиксированных макета:
+обложка, список, две колонки и редактируемая таблица. Вымышленное демо содержит
+пять слайдов, а `inspect` позволяет сверить их текст с исходным JSON.
+
+[Релиз v0.1.0](https://github.com/ilookatshow-gif/presentation-kit/releases/tag/v0.1.0) ·
+[Инструкция и запрос агенту](https://github.com/ilookatshow-gif/presentation-kit/blob/main/README.ru.md) ·
+[Учебный вход](https://github.com/ilookatshow-gif/presentation-kit/blob/v0.1.0/examples/synthetic-deck.json) ·
+[Редактируемый учебный PPTX](https://github.com/ilookatshow-gif/presentation-kit/blob/v0.1.0/examples/synthetic-demo.pptx).
+
+Python 3.9+, стандартная библиотека, без модели, API и покупки ядра. Сборка
+отклоняет переполненный макет, не обрезая текст. Это расчётная проверка;
+фактический вид нужно проверить в своём редакторе. Инструмент не редактирует
+произвольные готовые презентации и не сочиняет материал. Установщик POSIX,
+в Windows доступен запуск Python CLI напрямую.
+
 ## Один порядок работы для разных агентов
 
 | Шаг | Что нужно получить |

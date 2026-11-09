@@ -99,6 +99,24 @@ retrieval, not automatic policy authority selection. Python 3.9+, standard
 library only, no model, API key or paid core. The index contains the selected
 source text and is stored locally.
 
+### Build an editable presentation: presentation-kit
+
+[`presentation-kit`](https://github.com/ilookatshow-gif/presentation-kit)
+builds a PPTX from supplied text and tables. Four fixed layouts: cover,
+bullets, two columns and a native editable table. The invented demo contains
+five slides; `inspect` lets you compare their text with the source JSON.
+
+[Release v0.1.0](https://github.com/ilookatshow-gif/presentation-kit/releases/tag/v0.1.0) ·
+[Instructions and agent prompt](https://github.com/ilookatshow-gif/presentation-kit/blob/main/README.md) ·
+[Teaching input](https://github.com/ilookatshow-gif/presentation-kit/blob/v0.1.0/examples/synthetic-deck.json) ·
+[Editable teaching PPTX](https://github.com/ilookatshow-gif/presentation-kit/blob/v0.1.0/examples/synthetic-demo.pptx).
+
+Python 3.9+, standard library only, no model, API key or paid core. Overfull
+layouts are refused instead of truncating text. Fit is estimated; inspect
+the actual render in your editor. The tool does not rewrite a story or edit
+arbitrary existing presentations. The native installer is POSIX; Windows
+runs the source Python CLI directly.
+
 ## One working method
 
 | Step | What the agent needs or produces |
