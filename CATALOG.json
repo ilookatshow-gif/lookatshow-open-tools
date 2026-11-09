@@ -8,7 +8,7 @@
     "channel": "https://t.me/lookatsoul",
     "documentation_license": "MIT",
     "contains_core_installer": false,
-    "updated_at": "2026-11-02"
+    "updated_at": "2026-11-09"
   },
   "modules": [
     {
@@ -294,6 +294,54 @@
         "native_ci_jobs_passed": 4,
         "windows_scope": "Python CLI/tests/doctor/demo; installer remains POSIX"
       }
+    },
+    {
+      "id": "presentation-kit",
+      "version": "0.1.0",
+      "status": "public_release",
+      "name_ru": "Редактируемая презентация из структуры слайдов",
+      "name_en": "Editable PowerPoint deck from structured JSON",
+      "job": "Build a local editable PPTX from supplied text and table cells with four fixed layouts and conservative content-fit checks.",
+      "repository": "https://github.com/ilookatshow-gif/presentation-kit",
+      "release": "https://github.com/ilookatshow-gif/presentation-kit/releases/tag/v0.1.0",
+      "download": "https://github.com/ilookatshow-gif/presentation-kit/releases/download/v0.1.0/presentation-kit-0.1.0.zip",
+      "download_sha256": "5295a82dc892bfd46fce3f525f90544b947b789c5bab3941ce331912c8451cc6",
+      "demo": "https://github.com/ilookatshow-gif/presentation-kit/blob/v0.1.0/examples/synthetic-demo.pptx",
+      "demo_is_synthetic": true,
+      "transport": "cli",
+      "output_format": "pptx and JSON status",
+      "license": "MIT",
+      "runtime": "Python 3.9+, standard library only; native installer POSIX only",
+      "auth_required": false,
+      "network_required_for_runtime": false,
+      "standalone_without_core": true,
+      "agent_instructions": [
+        "Codex",
+        "Claude Code"
+      ],
+      "agent_requirement": "Run a local Python command and read JSON; supply the slide content explicitly and inspect the rendered deck.",
+      "account_writes": false,
+      "limitations": [
+        "Four fixed original layouts; no arbitrary template editing, images, charts, animations or story generation.",
+        "Content-fit checks are conservative estimates; inspect the result in the intended editor.",
+        "The included five-slide fixture was rendered and visually checked in LibreOffice; Microsoft PowerPoint has not been tested.",
+        "Native installer POSIX only; Windows runs the source Python CLI directly."
+      ],
+      "verified_demo": {
+        "date": "2026-11-09",
+        "os": "macOS arm64",
+        "python": "3.9.6",
+        "source_matches_public_tag": "v0.1.0",
+        "slides": 5,
+        "native_editable_table_cells": 12,
+        "pptx_sha256": "6d4ea083162233ad74e2537c5872da19c1303897fee60dc55f6abe2b27adfa29",
+        "unit_tests": 38,
+        "independent_checks": 30,
+        "visual_review": "All five sample slides rendered in LibreOffice and individually inspected."
+      },
+      "start_here": "START-HERE.md",
+      "learn": "https://lookatshow.ru/executive?utm_source=github&utm_medium=open_module&utm_campaign=presentation-kit&utm_content=catalog_learn",
+      "implementation": "https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=presentation-kit&utm_content=catalog_implementation"
     }
   ]
 }
