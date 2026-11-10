@@ -8,7 +8,7 @@
     "channel": "https://t.me/lookatsoul",
     "documentation_license": "MIT",
     "contains_core_installer": false,
-    "updated_at": "2026-11-09"
+    "updated_at": "2026-11-10"
   },
   "modules": [
     {
@@ -342,6 +342,66 @@
       "start_here": "START-HERE.md",
       "learn": "https://lookatshow.ru/executive?utm_source=github&utm_medium=open_module&utm_campaign=presentation-kit&utm_content=catalog_learn",
       "implementation": "https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=presentation-kit&utm_content=catalog_implementation"
+    },
+    {
+      "id": "crm-revops-kit",
+      "version": "0.1.0",
+      "status": "public_release",
+      "name_ru": "Проверка передачи сделки по точной принятой версии пакета",
+      "name_en": "Sales handoff audit against an exact acknowledged packet",
+      "job": "Compare a supplied sales handoff packet, its exact-version acknowledgement and a declared CRM snapshot; return a local human-review queue.",
+      "repository": "https://github.com/ilookatshow-gif/crm-revops-kit",
+      "release": "https://github.com/ilookatshow-gif/crm-revops-kit/releases/tag/v0.1.0",
+      "download": "https://github.com/ilookatshow-gif/crm-revops-kit/releases/download/v0.1.0/crm-revops-kit-0.1.0.zip",
+      "download_sha256": "495da66dabf2d11cca8ef531abea845ae45cd23bfa18ba4c46c293f7f9c29630",
+      "demo": "https://github.com/ilookatshow-gif/crm-revops-kit/blob/v0.1.0/examples/synthetic-handoffs.json",
+      "demo_report": "https://github.com/ilookatshow-gif/crm-revops-kit/blob/v0.1.0/examples/synthetic-report.json",
+      "demo_is_synthetic": true,
+      "transport": "cli",
+      "process_template": "https://github.com/ilookatshow-gif/crm-revops-kit/blob/v0.1.0/docs/HANDOFF-WORKFLOW.md",
+      "output_format": "JSON",
+      "license": "MIT",
+      "runtime": "Python 3.9+, standard library only; native installer POSIX only",
+      "auth_required": false,
+      "network_required_for_runtime": false,
+      "standalone_without_core": true,
+      "agent_instructions": [
+        "Codex",
+        "Claude Code"
+      ],
+      "agent_requirement": "Run local Python commands, preserve audit exit 0/1/2 and inspect every finding; keep actual human review and provider readback separate.",
+      "account_writes": false,
+      "limitations": [
+        "Exact module JSON contract; not an arbitrary vendor-export importer, CRM connector or complete lifecycle engine.",
+        "consistent means supplied fields agree. A packet digest does not establish source truth, identity, actual review, customer agreement or payment.",
+        "as_of and snapshot completeness are supplied declarations. Unusable or earlier snapshots cannot establish post-handoff owner/stage; absence is not proof of no CRM record.",
+        "No source retrieval, messaging, model or CRM writes. Native installer POSIX only; Windows runs the source Python CLI.",
+        "Timestamp support is a deliberately strict RFC3339-style subset; unknown -00:00 offsets are rejected."
+      ],
+      "verified_demo": {
+        "date": "2026-11-10",
+        "source_matches_public_tag": "v0.1.0",
+        "source_commit": "dff9beca7d9d987671dbe67b9b48107b95a9a205",
+        "synthetic_packets": 6,
+        "consistent": 1,
+        "needs_review": 5,
+        "audit_exit_code": 1,
+        "as_of": "2026-11-10T09:00:00+03:00",
+        "report_sha256": "0eb397f728bb87769bc74b097c4874f9196d608b63326acfad852dc238f3a34d",
+        "unit_tests": 59,
+        "independent_checks_per_artifact": 49,
+        "public_download_clean_install": true,
+        "report_rebuild_matches_bundled_example": true
+      },
+      "verification": {
+        "source_and_zip_unit_tests": 59,
+        "independent_checks_per_artifact": 49,
+        "anonymous_zip_sha256_verified": true,
+        "public_download_unit_tests": 59
+      },
+      "start_here": "START-HERE.md",
+      "learn": "https://lookatshow.ru/executive?utm_source=github&utm_medium=open_module&utm_campaign=crm-revops-kit&utm_content=catalog_learn",
+      "implementation": "https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=crm-revops-kit&utm_content=catalog_implementation"
     }
   ]
 }
