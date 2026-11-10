@@ -117,6 +117,27 @@ the actual render in your editor. The tool does not rewrite a story or edit
 arbitrary existing presentations. The native installer is POSIX; Windows
 runs the source Python CLI directly.
 
+### Review the exact sales handoff: crm-revops-kit
+
+[`crm-revops-kit`](https://github.com/ilookatshow-gif/crm-revops-kit) compares
+a supplied handoff packet, the acknowledgement for that version and a declared
+CRM snapshot. Its six invented cases produce one consistent row and five review
+items: missing or rejected acceptance, a changed packet, another owner and an
+elapsed next step. `audit` exit 1 is a complete valid report needing review.
+
+[Release v0.1.0](https://github.com/ilookatshow-gif/crm-revops-kit/releases/tag/v0.1.0) ·
+[Instructions and agent prompt](https://github.com/ilookatshow-gif/crm-revops-kit/blob/v0.1.0/README.md) ·
+[Teaching input](https://github.com/ilookatshow-gif/crm-revops-kit/blob/v0.1.0/examples/synthetic-handoffs.json) ·
+[Actual JSON report](https://github.com/ilookatshow-gif/crm-revops-kit/blob/v0.1.0/examples/synthetic-report.json).
+
+Python 3.9+, standard library only, offline, no model or account. `consistent`
+means the supplied fields agree; a digest does not prove source truth, identity,
+actual review, customer agreement or payment. Observation time is explicit;
+snapshot completeness is declared. The kit does not fetch evidence, message
+people or write to CRM, and covers one handoff rather than a full lifecycle.
+The native installer is POSIX; Windows runs the source Python CLI directly.
+
+
 ## One working method
 
 | Step | What the agent needs or produces |

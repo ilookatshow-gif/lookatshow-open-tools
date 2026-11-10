@@ -147,3 +147,34 @@ The structural check is not a visual review or a universal compatibility test.
 
 
 The bundled five-slide PPTX was rendered with LibreOffice and inspected at full size. The PNG preview shows that actual render. This does not establish a Microsoft PowerPoint test or universal rendering compatibility.
+
+
+## CRM RevOps Kit: версия передачи / exact handoff version
+
+[Релиз и ZIP / release and ZIP](https://github.com/ilookatshow-gif/crm-revops-kit/releases/tag/v0.1.0) ·
+[Вход / input](https://github.com/ilookatshow-gif/crm-revops-kit/blob/v0.1.0/examples/synthetic-handoffs.json) ·
+[Полученный отчёт / actual report](https://github.com/ilookatshow-gif/crm-revops-kit/blob/v0.1.0/examples/synthetic-report.json).
+
+Распакуйте выпуск в новую папку. Download and unpack the release into a new folder:
+
+```bash
+python3 -B crm_revops_kit.py --json doctor
+python3 -B crm_revops_kit.py --json fingerprint examples/synthetic-handoffs.json
+python3 -B crm_revops_kit.py --json audit examples/synthetic-handoffs.json
+```
+
+Ожидается шесть вымышленных передач: `consistent: 1`, `needs_review: 5`, код
+завершения 1. Это корректный отчёт со строками для проверки; ошибка входа даёт
+код 2, а полностью согласованный набор — код 0. Поля сравниваются на явно заданный
+`as_of`. Отчёт не подтверждает личность, чтение, согласие клиента или оплату.
+
+Expected: six invented handoffs, one consistent and five needing review;
+audit exit 1 is intentional. Exit 2 is invalid input/error; exit 0 is an entirely
+consistent supplied batch. Compare every finding with the input and the bundled
+report. The digest identifies a packet version; it does not authenticate a
+reviewer or establish source truth. Snapshot scope remains declared metadata.
+
+Use the module's bilingual workflow to handle missing or rejected acceptance,
+a changed packet, an owner/stage mismatch and unusable time evidence. No CRM
+API, source retrieval, messaging or record mutation is performed. Python 3.9+,
+standard library; native installer POSIX, Windows source CLI.
