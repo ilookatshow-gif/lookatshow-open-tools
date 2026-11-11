@@ -178,3 +178,38 @@ Use the module's bilingual workflow to handle missing or rejected acceptance,
 a changed packet, an owner/stage mismatch and unusable time evidence. No CRM
 API, source retrieval, messaging or record mutation is performed. Python 3.9+,
 standard library; native installer POSIX, Windows source CLI.
+
+
+## Agent Workflow Kit: заметки → проверенный реестр / notes → reviewed register
+
+[Релиз и ZIP / release and ZIP](https://github.com/ilookatshow-gif/agent-workflow-kit/releases/tag/v0.1.0) ·
+[Вход / source](https://github.com/ilookatshow-gif/agent-workflow-kit/blob/v0.1.0/examples/source.json) ·
+[Кандидаты / candidates](https://github.com/ilookatshow-gif/agent-workflow-kit/blob/v0.1.0/examples/candidates.json) ·
+[Решения / decisions](https://github.com/ilookatshow-gif/agent-workflow-kit/blob/v0.1.0/examples/decisions.json) ·
+[Проверка / review](https://github.com/ilookatshow-gif/agent-workflow-kit/blob/v0.1.0/examples/review.json) ·
+[CSV](https://github.com/ilookatshow-gif/agent-workflow-kit/blob/v0.1.0/examples/tasks.csv).
+
+Распакуйте выпуск в новую папку. Download and unpack the release into a new folder:
+
+```bash
+python3 -B workflow_kit.py --json doctor
+python3 -B workflow_kit.py --json review examples/source.json examples/candidates.json
+python3 -B workflow_kit.py --json export examples/source.json examples/candidates.json examples/decisions.json --output ./demo-tasks.csv
+```
+
+Ожидается пять вымышленных кандидатов: три технически согласованы, два требуют
+проверки; код `review` — 1. Предоставленные решения принимают два и отклоняют три;
+`export` с кодом 0 сохраняет две строки. Для второго принятого кандидата срок
+не установлен и остаётся пустым. Вопрос может пройти техническую проверку цитаты,
+но не стать обязательством. Смысл, сроки и пропуски разбирает человек отдельно.
+
+Expected: five invented candidates, three mechanically consistent and two needing
+review; review exit 1 is intentional. Supplied decisions accept two and reject
+three; export exits 0 and writes two task rows. One accepted date stays empty.
+Exact source matching is not semantic acceptance, identity or completeness.
+Reviewer metadata is a declaration, not authentication or proof of actual review.
+
+Missing decisions, stale review hashes or invalid accepted rows block the entire
+CSV. The kit makes no model/API/messaging/live-task calls. Python 3.9+, standard
+library; native installer POSIX, Windows source CLI. The bilingual process guide
+keeps local export separate from any later authorised provider delivery.

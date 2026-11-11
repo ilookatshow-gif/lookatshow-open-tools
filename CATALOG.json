@@ -8,7 +8,7 @@
     "channel": "https://t.me/lookatsoul",
     "documentation_license": "MIT",
     "contains_core_installer": false,
-    "updated_at": "2026-11-10"
+    "updated_at": "2026-11-11"
   },
   "modules": [
     {
@@ -402,6 +402,76 @@
       "start_here": "START-HERE.md",
       "learn": "https://lookatshow.ru/executive?utm_source=github&utm_medium=open_module&utm_campaign=crm-revops-kit&utm_content=catalog_learn",
       "implementation": "https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=crm-revops-kit&utm_content=catalog_implementation"
+    },
+    {
+      "id": "agent-workflow-kit",
+      "version": "0.1.0",
+      "status": "public_release",
+      "name_ru": "Из заметок встречи в проверенный реестр задач",
+      "name_en": "Meeting notes to a reviewed task register",
+      "job": "Check proposed personal commitments against exact supplied note spans, then export explicitly accepted rows from a complete version-bound review record to a local task CSV.",
+      "repository": "https://github.com/ilookatshow-gif/agent-workflow-kit",
+      "release": "https://github.com/ilookatshow-gif/agent-workflow-kit/releases/tag/v0.1.0",
+      "download": "https://github.com/ilookatshow-gif/agent-workflow-kit/releases/download/v0.1.0/agent-workflow-kit-0.1.0.zip",
+      "download_sha256": "adcebece488d3ed14c5d43a05057f37691d532aa18ee0a2a63a6e8ef180dbfe1",
+      "demo": "https://github.com/ilookatshow-gif/agent-workflow-kit/blob/v0.1.0/examples/source.json",
+      "demo_candidates": "https://github.com/ilookatshow-gif/agent-workflow-kit/blob/v0.1.0/examples/candidates.json",
+      "demo_decisions": "https://github.com/ilookatshow-gif/agent-workflow-kit/blob/v0.1.0/examples/decisions.json",
+      "demo_report": "https://github.com/ilookatshow-gif/agent-workflow-kit/blob/v0.1.0/examples/review.json",
+      "demo_csv": "https://github.com/ilookatshow-gif/agent-workflow-kit/blob/v0.1.0/examples/tasks.csv",
+      "demo_is_synthetic": true,
+      "transport": "cli",
+      "process_template": "https://github.com/ilookatshow-gif/agent-workflow-kit/blob/v0.1.0/docs/WORKFLOW.md",
+      "output_format": "JSON review/export metadata; UTF-8/LF accepted-task CSV",
+      "license": "MIT",
+      "runtime": "Python 3.9+, standard library only; native installer POSIX only",
+      "auth_required": false,
+      "network_required_for_runtime": false,
+      "standalone_without_core": true,
+      "agent_instructions": [
+        "Codex",
+        "Claude Code"
+      ],
+      "agent_requirement": "Run local Python commands, preserve review/export exit 0/1/2 and inspect every finding; real human meaning checks and later provider delivery remain separate.",
+      "account_writes": false,
+      "limitations": [
+        "Exact module JSON format; no automatic extraction, model, source retrieval, authenticated review, messaging or live task writes.",
+        "An exact source span and matching speaker ID do not establish a commitment, agreed deadline, completeness or identity.",
+        "Reviewer ID/date are supplied declarations, not authentication or proof that a person reviewed the notes. Hashes identify raw input versions.",
+        "Missing decisions, stale review hashes or a mechanically invalid accepted action block the complete CSV. Rejected bad candidates remain counted.",
+        "CSV is a local register, not a vendor-specific import contract. Formula-looking text cells receive a disclosed apostrophe; this is bounded spreadsheet-viewing mitigation.",
+        "Native installer POSIX only; Windows runs the source Python CLI. This is one process kit, not a general orchestration engine."
+      ],
+      "verified_demo": {
+        "date": "2026-11-11",
+        "source_matches_public_tag": "v0.1.0",
+        "source_commit": "3ea8c1d9817aa37422cdad5a5f34f3016c2e064d",
+        "synthetic_source_lines": 6,
+        "synthetic_candidates": 5,
+        "consistent": 3,
+        "needs_review": 2,
+        "review_exit_code": 1,
+        "accepted": 2,
+        "rejected": 3,
+        "export_exit_code": 0,
+        "review_sha256": "0e4ee0037bd6b64751e51b2e76b5fb7c54ea77bb2b8c2a95ac612c50405e72eb",
+        "csv_sha256": "94aa0314e6cd5df37512db1cf4261a164baca93c9db71ada1d30e8eb7982302d",
+        "csv_bytes": 527,
+        "unit_tests": 58,
+        "independent_checks_per_artifact": 55,
+        "public_download_clean_install": true,
+        "review_rebuild_matches_bundled_example": true,
+        "csv_rebuild_matches_bundled_example": true
+      },
+      "verification": {
+        "source_and_zip_unit_tests": 58,
+        "independent_checks_per_artifact": 55,
+        "anonymous_zip_sha256_verified": true,
+        "public_download_unit_tests": 58
+      },
+      "start_here": "START-HERE.md",
+      "learn": "https://lookatshow.ru/executive?utm_source=github&utm_medium=open_module&utm_campaign=agent-workflow-kit&utm_content=catalog_learn",
+      "implementation": "https://lookatshow.ru/ai-implementation/?utm_source=github&utm_medium=open_module&utm_campaign=agent-workflow-kit&utm_content=catalog_implementation"
     }
   ]
 }
