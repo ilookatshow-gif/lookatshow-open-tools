@@ -138,6 +138,29 @@ people or write to CRM, and covers one handoff rather than a full lifecycle.
 The native installer is POSIX; Windows runs the source Python CLI directly.
 
 
+### From meeting notes to a reviewed task register: agent-workflow-kit
+
+[`agent-workflow-kit`](https://github.com/ilookatshow-gif/agent-workflow-kit) checks
+proposed personal commitments against exact supplied note spans, then exports
+explicitly accepted rows from a complete review record to a local CSV. Its five
+invented candidates produce three mechanically consistent rows and two findings;
+the supplied decisions accept two and reject three. A question can match its
+source exactly and still be rejected because it is not a commitment.
+
+[Release v0.1.0](https://github.com/ilookatshow-gif/agent-workflow-kit/releases/tag/v0.1.0) ·
+[Instructions and agent prompt](https://github.com/ilookatshow-gif/agent-workflow-kit/blob/v0.1.0/README.md) ·
+[Process guide](https://github.com/ilookatshow-gif/agent-workflow-kit/blob/v0.1.0/docs/WORKFLOW.md) ·
+[Actual review](https://github.com/ilookatshow-gif/agent-workflow-kit/blob/v0.1.0/examples/review.json) ·
+[Accepted CSV](https://github.com/ilookatshow-gif/agent-workflow-kit/blob/v0.1.0/examples/tasks.csv).
+
+Python 3.9+, standard library only, offline, no model or account. Exact text
+matches do not establish commitment, agreed deadline, completeness or identity.
+Reviewer fields are declarations, not authentication. Missing decisions, stale
+input hashes or an invalid accepted row block the complete export. No automatic
+extraction, source retrieval, messaging or live task writes. Installer POSIX;
+Windows runs the source CLI. CSV is a local register, not a vendor import contract.
+
+
 ## One working method
 
 | Step | What the agent needs or produces |
